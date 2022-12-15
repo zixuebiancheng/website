@@ -365,6 +365,7 @@ spec:
       - name: hello
         image: busybox:1.28
         command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
+        #command是用来替换容器运行时的cmd命令的
       restartPolicy: OnFailure
     # 以上为 Pod 模板
 ```
